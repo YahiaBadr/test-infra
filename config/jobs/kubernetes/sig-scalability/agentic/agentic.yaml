@@ -75,6 +75,8 @@ periodics:
         value: "true"
       - name: EXPERIMENTAL_GCP_SNAPSHOT_PROMETHEUS_DISK
         value: "true"
+      - name: PRE_TEST_CMD
+        value: "/home/prow/go/src/k8s.io/perf-tests/clusterloader2/testing/agentic-sandbox/pre-test.sh"
 
 - cron: '0 6 * * *'
   name: ci-kubernetes-e2e-gce-agentic-sandbox-continuous-burst
@@ -150,3 +152,5 @@ periodics:
         value: "true"
       - name: EXPERIMENTAL_GCP_SNAPSHOT_PROMETHEUS_DISK
         value: "true"
+      - name: PRE_TEST_CMD
+        value: "/home/prow/go/src/k8s.io/perf-tests/clusterloader2/testing/agentic-sandbox/pre-test.sh"
